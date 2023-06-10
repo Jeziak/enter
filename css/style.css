@@ -18,7 +18,7 @@ header .navbar{
 
 /* main page css */
 .home{
-    background-image: url(//images/home-background.png);
+    background-image: url(https://github.com/Jeziak/enter/blob/e207dbe3ed3a46774ad2bf4c0eb6e2fc1fd4f2ef/images/home-background.png);
     background-size: cover;
     height: calc(100vh - 70px);
 }
