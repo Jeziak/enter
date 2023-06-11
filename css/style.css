@@ -1,4 +1,5 @@
 /* header css */
+
 header .navbar{
     background-color:#0077BE;
     color: #DFFF00;
@@ -91,7 +92,7 @@ header .navbar{
     margin-top: 50px;
     background-image: url(internet-3563638_1280.jpg);
     background-size: cover;
-    height: 400px;
+    min-height: 400px;
 }
 .section-why-us .row{
     color: #DFFF00;
@@ -107,9 +108,11 @@ header .navbar{
     border-radius: 30px;
     color: #006400;
     border: #006400 2px solid ;
+    
 }
 .contact{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .contact h2{
     color: #0077BE;
@@ -125,7 +128,7 @@ header .navbar{
 .contact .box button{
     padding: 10px 20px;
     margin-left: 50px;
-    width: 75%;
+    width: 80%;
     margin-left: 50%;
     margin-top: 30px;
     transform: translateX(-50%);
@@ -141,7 +144,7 @@ header .navbar{
     color: #006400;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 /* footer css */
@@ -149,7 +152,7 @@ footer{
     background-color: #0077BE;
     color: #DFFF00;
     padding: 20px;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 footer span , h5{
     margin: 15px;
@@ -163,4 +166,68 @@ footer span , h5{
 }
 .copyright h5{
     margin: 0 30px;
+}
+
+/* internet */
+.section-internet{
+    padding: 50px;
+    position: relative;
+    
+}
+.section-internet::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(pexels-picjumbocom-196655.png);
+    background-size: cover;
+    filter: grayscale(50%);
+    filter: brightness(0.7);
+}
+.section-internet .text-box{
+    position: relative;
+    color:#006400;
+    font-weight: bold;
+}
+.section-internet .text-box p{
+    font-size: 1.2rem;
+}
+.section-internet .text-box h2{
+    color:#DFFF00;
+    font-weight: bolder;
+    padding: 30px 0 ;
+}
+
+.section-internet .text-box button{
+    width: 50%;
+}
+.section-internet .card{
+    overflow-y: hidden;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
+    -moz-box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
+    box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
+}
+.section-internet .card-header {
+    height: 300px;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-150px);
+    background-color: #88C200;
+}
+.section-internet .card-header h4{
+    margin-top: 60%;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000080;
+    text-shadow: 2px 2px 3px rgba(0, 0, 128, 1);
+
+}
+.section-internet .card-body{
+    padding-top: 150px;
+    background: rgb(223,255,0);
+    background: linear-gradient(180deg, rgba(223,255,0,1) 0%, rgba(136,194,0,1) 100%);
+    color: #000080;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
