@@ -1,5 +1,7 @@
 /* header css */
-
+body{
+    height: 100%;
+}
 header .navbar{
     background-color:#0077BE;
     color: #DFFF00;
@@ -21,7 +23,7 @@ header .navbar{
 .home{
     background-image: url(home-background.png);
     background-size: cover;
-    height: calc(100vh - 70px);
+   padding-bottom: 50px;
 }
 .home-header{
     font-weight: bolder;
@@ -37,9 +39,11 @@ header .navbar{
     border: none;
     border-radius: 50px;
     filter: drop-shadow(-5px 5px 5px #006400 );
-    padding: 15px 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
+    
 }
 .btn-custome-link{
     text-decoration: none;
@@ -169,37 +173,38 @@ footer span , h5{
 }
 
 /* internet */
-.section-internet{
+.section-internet {
     padding: 50px;
     position: relative;
-    
+   
 }
-.section-internet::before{
+.section-internet::before {
     content: "";
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url(pexels-picjumbocom-196655.png);
-    background-size: cover;
-    filter: grayscale(50%);
-    filter: brightness(0.7);
+    background-image: url(net.png);
+    background-size: cover;    
+    filter: brightness(0.5);
 }
 .section-internet .text-box{
     position: relative;
-    color:#006400;
+    color:#88C200;
     font-weight: bold;
 }
 .section-internet .text-box p{
-    font-size: 1.2rem;
-}
-.section-internet .text-box h2{
-    color:#DFFF00;
-    font-weight: bolder;
-    padding: 30px 0 ;
+    font-size: 1.8rem;
 }
 
+.h2custome{
+    color:#DFFF00;
+    font-weight: bolder;
+    z-index: 1;
+    position: relative;
+    
+}
 .section-internet .text-box button{
-    width: 50%;
+    width: 70%;
 }
 .section-internet .card{
     overflow-y: hidden;
@@ -207,7 +212,7 @@ footer span , h5{
     -moz-box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
     box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
 }
-.section-internet .card-header {
+.section-internet  .card-header {
     height: 300px;
     width: 100%;
     border-radius: 50%;
@@ -216,7 +221,8 @@ footer span , h5{
     background-color: #88C200;
 }
 .section-internet .card-header h4{
-    margin-top: 60%;
+    position: relative;
+    top: 60%;
     font-size: 2rem;
     font-weight: bolder;
     color: #000080;
@@ -230,4 +236,68 @@ footer span , h5{
     color: #000080;
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+/* tv */
+ .section-tv{
+    padding: 50px;
+    position: relative;
+   
+}
+ .section-tv::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(tv.png);
+    background-size: cover;
+    filter: grayscale(50%);
+    filter: brightness(0.7);
+}
+
+
+.h2custome{
+    color:#DFFF00;
+    font-weight: bolder;
+    z-index: 1;
+    position: relative;
+    
+}
+
+.section-tv .card{
+    overflow-y: hidden;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
+    -moz-box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
+    box-shadow: 8px 8px 24px 0px rgba(255, 254, 203, 1)!important;
+}
+ .section-tv .card-header {
+    height: 300px;
+    width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-150px);
+    background-color: #88C200;
+}
+.section-tv .card-header h4{
+    position: relative;
+    top: 60%;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #000080;
+    text-shadow: 2px 2px 3px rgba(0, 0, 128, 1);
+
+}
+.section-tv .card-body{
+    padding-top: 150px;
+    background: rgb(223,255,0);
+    background: linear-gradient(180deg, rgba(223,255,0,1) 0%, rgba(136,194,0,1) 100%);
+    color: #000080;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.section-senior::before{
+    background-image: url(senior.png);
+    filter: brightness(0.6);
+    transform: scaleX(-1);
 }
